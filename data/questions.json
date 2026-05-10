@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "title": "Simulador de Examen",
+    "description": "Preguntas sobre la evolución histórica de la IA y sus conceptos fundamentales.",
+    "passingScore": 50,
+    "defaultTimeLimitMinutes": 10,
+    "defaultQuestionTimeLimitSeconds": 30,
+    "version": 2
+  },
+  "questions": [
+    {
+      "id": "m1q22",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué término describe las fuerzas profundas sistémicas que atraviesan industrias y geografías, actuando como causas raíz de las tendencias?",
+      "options": [
+        "Señales",
+        "Tendencias",
+        "Drivers",
+        "Eventos"
+      ],
+      "answer": 2,
+      "explanation": "Los drivers son fuerzas profundas sistémicas que actúan como causas raíz de las tendencias."
+    },
+    {
+      "id": "m1q53",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué práctica es fundamental para medir el valor de los proyectos de IA según el texto?",
+      "options": [
+        "Depender de un único indicador",
+        "Baseline previo obligatorio",
+        "Ignorar el cálculo de ROI",
+        "Evitar revisiones periódicas"
+      ],
+      "answer": 1,
+      "explanation": "Un baseline previo obligatorio es fundamental para medir el estado actual antes de implementar la IA y atribuir el beneficio marginal al proyecto."
+    },
+    {
+      "id": "m1q03",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué tipo de aprendizaje utiliza ChatGPT para ajustar su comportamiento según las calificaciones de los usuarios?",
+      "options": [
+        "Aprendizaje supervisado",
+        "Aprendizaje no supervisado",
+        "Aprendizaje por refuerzo",
+        "Aprendizaje profundo"
+      ],
+      "answer": 2,
+      "explanation": "ChatGPT utiliza aprendizaje por refuerzo, donde el modelo ajusta su comportamiento basado en el feedback de los usuarios."
+    },
+    {
+      "id": "m1q58",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué perfil de usuario requiere reportes estáticos mensuales y alertas automáticas de sesgo?",
+      "options": [
+        "C-Suite",
+        "Responsables de Área",
+        "Compliance / Legal",
+        "Usuarios Finales"
+      ],
+      "answer": 2,
+      "explanation": "El perfil de Compliance / Legal requiere reportes estáticos mensuales y alertas automáticas de sesgo, como Disparate Impact y audit logs."
+    },
+    {
+      "id": "m1q29",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué dimensión del Prisma de Gartner evalúa la madurez tecnológica y la preparación organizacional para implementar IA?",
+      "options": [
+        "Business Value",
+        "Feasibility",
+        "Impacto",
+        "Factibilidad"
+      ],
+      "answer": 1,
+      "explanation": "Feasibility evalúa la madurez tecnológica y la preparación organizacional para implementar IA."
+    },
+    {
+      "id": "m1q55",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué métrica evalúa el poder discriminante del modelo en el scoring de clientes bancarios?",
+      "options": [
+        "AUC-ROC",
+        "Gini Coefficient",
+        "PSI",
+        "Tasa de Mora"
+      ],
+      "answer": 1,
+      "explanation": "El Gini Coefficient evalúa el poder discriminante del modelo entre buenos y malos clientes en el scoring bancario."
+    },
+    {
+      "id": "m1q37",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué sector muestra la mayor intensidad de adopción de IA según la matriz de intensidad?",
+      "options": [
+        "Construcción",
+        "Telecomunicaciones",
+        "Alimentación",
+        "Textiles"
+      ],
+      "answer": 1,
+      "explanation": "El sector de Telecomunicaciones muestra la mayor intensidad de adopción de IA, junto con TI, Medios, I+D, y Servicios legales y contables."
+    },
+    {
+      "id": "m1q13",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué fenómeno está causando el declive acelerado del SEO tradicional?",
+      "options": [
+        "El aumento de búsquedas en Google",
+        "La migración de usuarios a LLMs y plataformas de IA generativa",
+        "La mejora en los algoritmos de Google",
+        "El uso de palabras clave más específicas"
+      ],
+      "answer": 1,
+      "explanation": "Los usuarios están migrando masivamente sus búsquedas desde Google hacia los LLMs y plataformas de IA generativa, lo que está causando el declive del SEO tradicional."
+    },
+    {
+      "id": "m1q19",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué tipo de agente coordina múltiples agentes especializados para resolver problemas complejos?",
+      "options": [
+        "Agente de utilidad",
+        "Agente jerárquico/orquestador",
+        "Agente basado en objetivos",
+        "Agente de aprendizaje"
+      ],
+      "answer": 1,
+      "explanation": "Un agente jerárquico/orquestador coordina múltiples agentes especializados, actuando como director de orquesta para resolver problemas complejos."
+    },
+    {
+      "id": "m1q61",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué porcentaje de proyectos de IA fallan según datos de Gartner?",
+      "options": [
+        "15%",
+        "35%",
+        "85%",
+        "95%"
+      ],
+      "answer": 2,
+      "explanation": "Según Gartner, el 85% de los proyectos de IA fallan."
+    },
+    {
+      "id": "m1q34",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué término describe los costes que no son visibles inicialmente en un proyecto de IA y pueden duplicar o triplicar la inversión inicial?",
+      "options": [
+        "Efecto Iceberg",
+        "Efecto Dominó",
+        "Efecto Mariposa",
+        "Efecto Túnel"
+      ],
+      "answer": 0,
+      "explanation": "El efecto iceberg describe los costes ocultos en un proyecto de IA que no son visibles inicialmente y pueden duplicar o triplicar la inversión."
+    },
+    {
+      "id": "m1q75",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué porcentaje de líderes en empresas Frontier Firms usan IA regularmente?",
+      "options": [
+        "21%",
+        "45%",
+        "69%",
+        "85%"
+      ],
+      "answer": 2,
+      "explanation": "El 69% de los líderes en empresas Frontier Firms usan IA regularmente, según el Microsoft Work Trend Index 2025."
+    },
+    {
+      "id": "m1q60",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué KPI mide la satisfacción post-interacción en un chatbot de asistencia en carretera?",
+      "options": [
+        "FCR",
+        "Tiempo de Respuesta",
+        "CSAT",
+        "Uptime"
+      ],
+      "answer": 2,
+      "explanation": "El CSAT (Customer Satisfaction Score) mide la satisfacción post-interacción en un chatbot de asistencia en carretera."
+    },
+    {
+      "id": "m1q49",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué reto de adopción de IA se refiere a la necesidad de definir una estrategia clara antes de implementar herramientas?",
+      "options": [
+        "Cultura y mentalidad",
+        "Estrategia y mindset de IA",
+        "Datos y conocimiento",
+        "Tecnología y arquitectura"
+      ],
+      "answer": 1,
+      "explanation": "El reto 'Estrategia y mindset de IA' se refiere a la necesidad de definir una estrategia clara antes de implementar herramientas."
+    },
+    {
+      "id": "m1q41",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué modelo de distribución de esfuerzos se recomienda para gestionar la cartera de proyectos de IA?",
+      "options": [
+        "50/30/20",
+        "80/15/5",
+        "70/20/10",
+        "60/25/15"
+      ],
+      "answer": 2,
+      "explanation": "El modelo recomendado es 70/20/10: 70% para el núcleo estable, 20% para mejora de iniciativas existentes, y 10% para exploración e innovación."
+    },
+    {
+      "id": "m1q05",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué modelo de lenguaje es considerado el estándar de oro en benchmarks de análisis financiero?",
+      "options": [
+        "Gemini (Google DeepMind)",
+        "Claude (Anthropic)",
+        "Llama (Meta)",
+        "GPT (OpenAI)"
+      ],
+      "answer": 3,
+      "explanation": "GPT-5.4 de OpenAI es considerado el estándar de oro en benchmarks de análisis financiero, identificando correctamente datos faltantes y evitando fabricar información."
+    },
+    {
+      "id": "m1q09",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué término describe la generación de información falsa con total confianza por parte de un modelo de lenguaje?",
+      "options": [
+        "Sesgo algorítmico",
+        "Alucinaciones",
+        "Overfitting",
+        "Underfitting"
+      ],
+      "answer": 1,
+      "explanation": "Las alucinaciones ocurren cuando un modelo de lenguaje genera información falsa con total confianza."
+    },
+    {
+      "id": "m1q31",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué pregunta central debe responder un business case de IA en una organización?",
+      "options": [
+        "¿Qué tecnología de IA es la más avanzada?",
+        "¿Cuál es el presupuesto disponible para el proyecto?",
+        "¿Merece la pena hacer este proyecto?",
+        "¿Cuántos empleados se necesitarán para implementar la IA?"
+      ],
+      "answer": 2,
+      "explanation": "Un business case de IA debe responder a la pregunta central: ¿Merece la pena hacer este proyecto?"
+    },
+    {
+      "id": "m1q66",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Cuál es la diferencia de coste entre prevención, detección y remediación en proyectos de IA?",
+      "options": [
+        "La prevención es 5 veces más cara que la detección",
+        "La detección es 10 veces más cara que la prevención",
+        "La remediación es 10 veces más cara que la detección",
+        "La prevención es 10 veces más cara que la remediación"
+      ],
+      "answer": 2,
+      "explanation": "La remediación es 10 veces más cara que la detección, y la detección es 5 veces más cara que la prevención."
+    },
+    {
+      "id": "m1q44",
+      "category": "Módulo 1 - Set 1",
+      "prompt": "¿Qué componente de la gobernanza de IA se encarga de proteger la confidencialidad de la información y asegurar la calidad de los datos?",
+      "options": [
+        "Estrategia y objetivos",
+        "Datos y seguridad",
+        "Riesgo y compliance",
+        "Arquitectura y herramientas"
+      ],
+      "answer": 1,
+      "explanation": "El componente 'Datos y seguridad' protege la confidencialidad de la información y asegura la calidad de los datos."
+    },
+    {
+      "id": "m1q72",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué característica NO es propia de la IA generativa en comparación con la IA tradicional?",
+      "options": [
+        "Output no determinista",
+        "Razonamiento y planificación",
+        "Precisión conocida y predecible",
+        "Capacidades multimodales"
+      ],
+      "answer": 2,
+      "explanation": "La IA tradicional tiene una precisión conocida y predecible, mientras que la IA generativa tiene un output no determinista."
+    },
+    {
+      "id": "m1q42",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué tipo de proyectos se ejecutan en el Horizonte H1 (corto plazo) del roadmap de IA?",
+      "options": [
+        "Transformación total del modelo de negocio",
+        "Quick wins con alto impacto",
+        "Iniciativas de integración sistémica",
+        "Proyectos de investigación avanzada"
+      ],
+      "answer": 1,
+      "explanation": "En el Horizonte H1 se ejecutan quick wins, proyectos pequeños de alto impacto que generan resultados en semanas."
+    },
+    {
+      "id": "m1q40",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué horizonte del Roadmap de los 3 Horizontes se enfoca en la transformación total del modelo de negocio mediante IA generativa avanzada?",
+      "options": [
+        "Horizonte 1 (Corto Plazo)",
+        "Horizonte 2 (Medio Plazo)",
+        "Horizonte 3 (Largo Plazo)",
+        "Horizonte 4 (Futuro Distante)"
+      ],
+      "answer": 2,
+      "explanation": "El Horizonte 3 (Largo Plazo) representa la transformación total del modelo de negocio mediante IA generativa avanzada y sistemas de agéntica autónoma."
+    },
+    {
+      "id": "m1q36",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué país lidera en despliegue de IA según datos de Statista?",
+      "options": [
+        "Estados Unidos",
+        "Alemania",
+        "India",
+        "España"
+      ],
+      "answer": 2,
+      "explanation": "India lidera con un 59% en despliegue de IA, seguido de Emiratos Árabes Unidos (58%) y Singapur (53%)."
+    },
+    {
+      "id": "m1q47",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Cuál de los siguientes NO es un pilar fundamental de la gestión del cambio en la transformación por IA?",
+      "options": [
+        "Visión y sponsorship ejecutivo",
+        "Comunicación transparente",
+        "Automatización total",
+        "Seguimiento y refuerzo"
+      ],
+      "answer": 2,
+      "explanation": "La automatización total no es un pilar de la gestión del cambio; en su lugar, se enfatiza la participación, el acompañamiento, y la integración en procesos."
+    },
+    {
+      "id": "m1q07",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué arquitectura de red neuronal permitió a Netflix pasar de recomendar películas por género simple a entender conceptos narrativos profundos?",
+      "options": [
+        "Redes Neuronales Convolucionales",
+        "Redes Neuronales Recurrentes",
+        "Deep Learning",
+        "Transformers"
+      ],
+      "answer": 2,
+      "explanation": "El Deep Learning permitió a Netflix entender conceptos narrativos profundos al descubrir automáticamente relaciones semánticas en los datos."
+    },
+    {
+      "id": "m1q56",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué función crítica cumple un cuadro de mando en contextos de IA?",
+      "options": [
+        "Sustituir la toma de decisiones humanas",
+        "Comunicar el valor del modelo a ejecutivos no técnicos",
+        "Automatizar completamente los procesos de negocio",
+        "Eliminar la necesidad de alertas automáticas"
+      ],
+      "answer": 1,
+      "explanation": "Un cuadro de mando en contextos de IA cumple la función crítica de comunicar el valor del modelo a ejecutivos no técnicos y detectar degradación operativa mediante alertas automáticas."
+    },
+    {
+      "id": "m1q33",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué beneficio principal aporta la automatización del procesamiento de facturas con IA?",
+      "options": [
+        "Aumento de ingresos",
+        "Eliminación de errores y reducción de tiempo",
+        "Mejor relación con el cliente",
+        "Mayor diferenciación competitiva"
+      ],
+      "answer": 1,
+      "explanation": "La automatización del procesamiento de facturas con IA aporta como beneficio principal la eliminación de errores y la reducción de tiempo."
+    },
+    {
+      "id": "m1q17",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué tipo de agente puede generar transcripciones, resúmenes y action items automáticamente en reuniones?",
+      "options": [
+        "Agentes en CRM",
+        "Agentes de transcripción",
+        "Agentes de automatización",
+        "Agentes de chat"
+      ],
+      "answer": 1,
+      "explanation": "Los agentes de transcripción capturan el audio de reuniones, generan transcripciones, resúmenes con puntos clave y action items, y los distribuyen automáticamente."
+    },
+    {
+      "id": "m1q67",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Cuántas etapas componen el ciclo continuo de mitigación de riesgos en proyectos de IA?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "El ciclo continuo de mitigación de riesgos en proyectos de IA se compone de seis etapas: Identificar Riesgos, Evaluar Impacto, Diseñar Controles, Implementar, Monitorizar, y Mejorar."
+    },
+    {
+      "id": "m1q32",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Cuál de los siguientes NO es uno de los 5 pilares del business case de IA?",
+      "options": [
+        "Reto",
+        "Impacto",
+        "Innovación",
+        "Factibilidad"
+      ],
+      "answer": 2,
+      "explanation": "Los 5 pilares del business case de IA son: Reto, Impacto, Factibilidad, Riesgos, y ROI. 'Innovación' no es uno de ellos."
+    },
+    {
+      "id": "m1q52",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Cuál es el método de atribución de valor en IA considerado el 'gold standard'?",
+      "options": [
+        "Before/After",
+        "A/B Testing",
+        "Expert Estimation",
+        "Proxy Metrics"
+      ],
+      "answer": 1,
+      "explanation": "El A/B Testing es considerado el 'gold standard' con un 92% de fiabilidad, ya que asigna aleatoriamente grupos control y tratamiento, aislando el efecto de la IA."
+    },
+    {
+      "id": "m1q18",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Cuál es la principal diferencia entre un chatbot y un agente de IA?",
+      "options": [
+        "Un chatbot es proactivo, mientras que un agente es reactivo",
+        "Un chatbot trabaja de forma asíncrona, mientras que un agente es síncrono",
+        "Un chatbot es reactivo, mientras que un agente puede ser proactivo y trabajar de forma asíncrona",
+        "Un chatbot requiere supervisión humana, mientras que un agente no"
+      ],
+      "answer": 2,
+      "explanation": "Un chatbot es reactivo y requiere interacción síncrona, mientras que un agente puede ser proactivo y trabajar de forma asíncrona sin intervención humana constante."
+    },
+    {
+      "id": "m1q14",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué navegador integra un agente de navegación que asiste al usuario de forma contextual en tiempo real?",
+      "options": [
+        "Google Chrome",
+        "Atlas (OpenAI)",
+        "Microsoft Edge",
+        "Safari"
+      ],
+      "answer": 1,
+      "explanation": "Atlas, desarrollado por OpenAI para ChatGPT, es un navegador con agentes de navegación integrados que asisten al usuario de forma contextual en tiempo real."
+    },
+    {
+      "id": "m1q27",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué navegador introduce un asistente contextual que permite interactuar con cualquier web mediante diálogo natural?",
+      "options": [
+        "Atlas",
+        "Comet",
+        "Edge",
+        "Chrome"
+      ],
+      "answer": 1,
+      "explanation": "Comet, de Perplexity, introduce un asistente contextual que permite interactuar con cualquier web mediante diálogo natural."
+    },
+    {
+      "id": "m1q63",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Cuál de los siguientes NO es un principio fundamental del GDPR?",
+      "options": [
+        "Consentimiento explícito",
+        "Limitación de datos",
+        "Validación de datos",
+        "Automatización total"
+      ],
+      "answer": 3,
+      "explanation": "La automatización total no es un principio del GDPR. Los principios incluyen consentimiento explícito, limitación de datos, validación de datos, cautela con datos sensibles, confidencialidad, y responsabilidad."
+    },
+    {
+      "id": "m1q25",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué tendencia tecnológica permite ejecutar IA localmente en el dispositivo, sin latencia ni envío de datos a la nube?",
+      "options": [
+        "IA Multimodal Nativa",
+        "Intelligent Experience Architecture",
+        "Edge AI y SLMs",
+        "Digital Twins"
+      ],
+      "answer": 2,
+      "explanation": "Edge AI y SLMs permiten ejecutar IA localmente en el dispositivo, sin latencia ni envío de datos a la nube."
+    },
+    {
+      "id": "m1q15",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué sistema de IA es instalable localmente en el ordenador del usuario sin depender de la nube?",
+      "options": [
+        "Copilot",
+        "OpenClaw",
+        "Gemini",
+        "Perplexity"
+      ],
+      "answer": 1,
+      "explanation": "OpenClaw es un sistema de IA instalable localmente en el ordenador del usuario, sin depender de la nube."
+    },
+    {
+      "id": "m1q02",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué evento marcó el inicio oficial del término 'inteligencia artificial'?",
+      "options": [
+        "La victoria de Deep Blue sobre Kasparov en 1997",
+        "La Conferencia de Dartmouth en 1956",
+        "El lanzamiento de ChatGPT en 2022",
+        "El Informe Lighthill en 1973"
+      ],
+      "answer": 1,
+      "explanation": "El término 'inteligencia artificial' se acuñó oficialmente en 1956 durante la Conferencia de Dartmouth."
+    },
+    {
+      "id": "m1q54",
+      "category": "Módulo 1 - Set 2",
+      "prompt": "¿Qué porcentaje de proyectos de IA correctamente alineados con el negocio logran ROI positivo?",
+      "options": [
+        "23%",
+        "50%",
+        "87%",
+        "95%"
+      ],
+      "answer": 2,
+      "explanation": "Los proyectos de IA correctamente alineados con el negocio logran ROI positivo en el 87% de los casos."
+    },
+    {
+      "id": "m1q43",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Cuál de los siguientes NO es un principio de un portfolio de IA sostenible?",
+      "options": [
+        "Alineado con la estrategia",
+        "Quick wins con KPIs específicos",
+        "Enfoque en proyectos aislados",
+        "Transversalización y reutilización"
+      ],
+      "answer": 2,
+      "explanation": "Un principio de un portfolio de IA sostenible es evitar proyectos aislados y fomentar la transversalización y reutilización de capacidades."
+    },
+    {
+      "id": "m1q50",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué enfoque se recomienda para generar resultados inmediatos en la adopción de IA?",
+      "options": [
+        "Esperar a tener todo perfecto",
+        "Empezar por quick wins visibles",
+        "Implementar solo proyectos a largo plazo",
+        "Evitar la participación de equipos"
+      ],
+      "answer": 1,
+      "explanation": "Se recomienda empezar por quick wins visibles, proyectos pequeños que demuestren valor en pocas semanas y generen confianza interna."
+    },
+    {
+      "id": "m1q38",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿En qué nivel de madurez de IA se encuentra una empresa que implementa IA en proyectos seleccionados sin integración estratégica?",
+      "options": [
+        "Nivel 1: Conciencia",
+        "Nivel 2: Experimentación Ad Hoc",
+        "Nivel 3: Operacionalización",
+        "Nivel 4: Integración Sistémica"
+      ],
+      "answer": 1,
+      "explanation": "Una empresa que implementa IA en proyectos seleccionados sin integración estratégica se encuentra en el Nivel 2: Experimentación Ad Hoc."
+    },
+    {
+      "id": "m1q74",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué modelo conceptualiza la IA como un compañero de razonamiento en lugar de una herramienta?",
+      "options": [
+        "Modelo de automatización",
+        "Modelo de productividad personal",
+        "Modelo de rediseño cognitivo",
+        "Modelo de mejora incremental"
+      ],
+      "answer": 2,
+      "explanation": "El modelo de rediseño cognitivo conceptualiza la IA como un compañero de razonamiento, donde la IA aporta capacidad analítica y el humano aporta criterio y contexto."
+    },
+    {
+      "id": "m1q20",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Cuál es una de las principales barreras de adopción de agentes de IA según Deloitte?",
+      "options": [
+        "Falta de interés en la tecnología",
+        "Preocupaciones de riesgo y cumplimiento normativo",
+        "Alto coste de hardware",
+        "Falta de conectividad a internet"
+      ],
+      "answer": 1,
+      "explanation": "Según Deloitte, una de las principales barreras de adopción de agentes de IA son las preocupaciones de riesgo y cumplimiento normativo, como el GDPR."
+    },
+    {
+      "id": "m1q51",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué porcentaje de organizaciones reporta una atribución clara del valor generado por la IA?",
+      "options": [
+        "15%",
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "answer": 1,
+      "explanation": "Solo el 25% de las organizaciones reporta una atribución clara del valor generado por la IA."
+    },
+    {
+      "id": "m1q65",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué riesgo NO se menciona como crítico en el caso práctico de la aseguradora extranjera con agentes de IA?",
+      "options": [
+        "Adecuación al nuevo mercado",
+        "Regulación local",
+        "Escalabilidad tecnológica",
+        "Falta de presupuesto"
+      ],
+      "answer": 3,
+      "explanation": "Los riesgos mencionados incluyen adecuación al nuevo mercado, regulación local, y escalabilidad tecnológica. La falta de presupuesto no se menciona."
+    },
+    {
+      "id": "m1q26",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué reemplazará a las aplicaciones tradicionales en el Horizonte 2 del modelo McKinsey?",
+      "options": [
+        "Chatbots",
+        "Agentes de IA",
+        "Aplicaciones móviles",
+        "Asistentes virtuales"
+      ],
+      "answer": 1,
+      "explanation": "En el Horizonte 2, los agentes de IA reemplazarán a las aplicaciones tradicionales, transformando la interacción con servicios y datos."
+    },
+    {
+      "id": "m1q35",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Cuál de los siguientes NO es uno de los 4 pilares de rentabilidad del ROI de la IA?",
+      "options": [
+        "Ahorro de tiempo",
+        "Reducción de costes",
+        "Aumento de la complejidad",
+        "Mejora de calidad o servicio"
+      ],
+      "answer": 2,
+      "explanation": "Los 4 pilares de rentabilidad del ROI de la IA son: Ahorro de tiempo, Reducción de costes, Aumento de ingresos, y Mejora de calidad o servicio. 'Aumento de la complejidad' no es uno de ellos."
+    },
+    {
+      "id": "m1q11",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué herramienta de IA permite trabajar con documentación confidencial sin exponerla a entrenamientos externos?",
+      "options": [
+        "ChatGPT",
+        "Gemini",
+        "NotebookLM",
+        "Claude"
+      ],
+      "answer": 2,
+      "explanation": "NotebookLM crea una red neuronal especializada solo para el usuario, manteniendo el contenido cargado exclusivamente en su cuenta sin exponerse a entrenamientos externos."
+    },
+    {
+      "id": "m1q16",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué módulo en un agente de IA almacena y recupera documentos del usuario sin reentrenamiento del modelo?",
+      "options": [
+        "Memoria",
+        "Planificación",
+        "RAG (Retrieval-Augmented Generation)",
+        "Herramientas y APIs"
+      ],
+      "answer": 2,
+      "explanation": "El módulo RAG (Retrieval-Augmented Generation) almacena y recupera documentos del usuario, permitiendo trabajar con información actualizada y confidencial sin reentrenamiento del modelo."
+    },
+    {
+      "id": "m1q69",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué significa la letra 'A' en el modelo RACI?",
+      "options": [
+        "Responsable",
+        "Aprobador",
+        "Consultado",
+        "Informado"
+      ],
+      "answer": 1,
+      "explanation": "La letra 'A' en el modelo RACI significa 'Aprobador', quien da el OK final para una actividad."
+    },
+    {
+      "id": "m1q71",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Cuál es la inversión total proyectada por las cinco grandes tecnológicas en infraestructura de IA para 2026?",
+      "options": [
+        "$180 mil millones",
+        "$350 mil millones",
+        "$500 mil millones",
+        "$715 mil millones"
+      ],
+      "answer": 3,
+      "explanation": "Las cinco grandes tecnológicas proyectan una inversión total de $715 mil millones de dólares en infraestructura de IA para 2026."
+    },
+    {
+      "id": "m1q68",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué tipo de control se enfoca en evitar que un problema emerja?",
+      "options": [
+        "Detectivos",
+        "Correctivos",
+        "Preventivos",
+        "Reactivos"
+      ],
+      "answer": 2,
+      "explanation": "Los controles preventivos se enfocan en evitar que un problema emerja, operando antes de que el problema ocurra."
+    },
+    {
+      "id": "m1q04",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué arquitectura revolucionó el procesamiento de lenguaje natural en 2017?",
+      "options": [
+        "Redes Neuronales Convolucionales",
+        "Transformers",
+        "Redes Neuronales Recurrentes",
+        "Máquinas de Vectores de Soporte"
+      ],
+      "answer": 1,
+      "explanation": "La arquitectura Transformer, introducida en el paper 'Attention is all you need' (2017), revolucionó el procesamiento de lenguaje natural."
+    },
+    {
+      "id": "m1q08",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué conjunto de datos se utiliza para ajustar hiperparámetros y evitar sobreajuste en un modelo de Machine Learning?",
+      "options": [
+        "Training Set",
+        "Validation Set",
+        "Test Set",
+        "Pre-entrenamiento"
+      ],
+      "answer": 1,
+      "explanation": "El Validation Set se utiliza para ajustar hiperparámetros y evitar sobreajuste durante el entrenamiento del modelo."
+    },
+    {
+      "id": "m1q21",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué metodología sistemática se utiliza para entender cómo funcionan las tendencias y cómo influyen en escenarios futuros posibles?",
+      "options": [
+        "Benchmarking",
+        "Foresight",
+        "Design Thinking",
+        "Agile"
+      ],
+      "answer": 1,
+      "explanation": "El foresight es una metodología sistemática para entender cómo funcionan las tendencias y cómo influyen en escenarios futuros posibles."
+    },
+    {
+      "id": "m1q59",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué métrica en el scoring de clientes bancarios indica la estabilidad del modelo?",
+      "options": [
+        "Gini Coefficient",
+        "PSI",
+        "Tasa de Mora",
+        "Disparate Impact"
+      ],
+      "answer": 1,
+      "explanation": "El PSI (Population Stability Index) indica la estabilidad del modelo en el scoring de clientes bancarios."
+    },
+    {
+      "id": "m1q64",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué riesgo tecnológico se refiere a la incapacidad de un modelo de IA para generalizar a datos nuevos?",
+      "options": [
+        "Drifting",
+        "Sesgo de datos",
+        "Sobreajuste",
+        "Fuga de datos"
+      ],
+      "answer": 2,
+      "explanation": "El sobreajuste se refiere a la incapacidad de un modelo de IA para generalizar a datos nuevos."
+    },
+    {
+      "id": "m1q39",
+      "category": "Módulo 1 - Set 3",
+      "prompt": "¿Qué dimensión crítica para escalar IA requiere una 'escalera de datos' que garantice calidad y gobernanza?",
+      "options": [
+        "Estrategia y Liderazgo",
+        "Datos como Activo Estratégico",
+        "Talento y Alfabetización Cultural",
+        "Gobernanza y Modelos Organizacionales"
+      ],
+      "answer": 1,
+      "explanation": "La dimensión 'Datos como Activo Estratégico' requiere una 'escalera de datos' que garantice calidad, limpieza, estructuración, y gobernanza."
+    }
+  ]
+}

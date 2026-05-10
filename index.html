@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simulador de Examen</title>
+    <meta
+      name="description"
+      content="Simulador de examen de opción múltiple. Exámenes cronometrados con puntuación automática y revisión de respuestas."
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir al contenido principal</a>
+
+    <header class="app-header" role="banner">
+      <a class="brand" href="./" aria-label="Inicio del Simulador de Examen">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="2.5" y="2.5" width="27" height="27" rx="6" fill="none" stroke="currentColor" stroke-width="2.5" />
+          <path d="M9 16.5 L14 21.5 L23 11.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="brand-name">Simulador de Examen</span>
+      </a>
+
+      <div class="header-actions">
+        <button
+          id="theme-toggle"
+          class="icon-btn"
+          type="button"
+          aria-label="Cambiar tema"
+          aria-pressed="false"
+          title="Cambiar tema"
+        >
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2.5" x2="12" y2="5" />
+              <line x1="12" y1="19" x2="12" y2="21.5" />
+              <line x1="2.5" y1="12" x2="5" y2="12" />
+              <line x1="19" y1="12" x2="21.5" y2="12" />
+              <line x1="5" y1="5" x2="6.7" y2="6.7" />
+              <line x1="17.3" y1="17.3" x2="19" y2="19" />
+              <line x1="5" y1="19" x2="6.7" y2="17.3" />
+              <line x1="17.3" y1="6.7" x2="19" y2="5" />
+            </g>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8 8 0 1 1 9.5 4 6.5 6.5 0 0 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="app-main" tabindex="-1">
+      <!-- ============== PANTALLA DE INICIO ============== -->
+      <section id="screen-start" class="screen" aria-labelledby="start-title">
+        <div class="card start-card">
+          <h1 id="start-title" class="screen-title">Examen de Práctica</h1>
+          <p id="start-description" class="muted">Cargando examen…</p>
+
+          <dl class="meta-grid" aria-label="Resumen del examen">
+            <div>
+              <dt>Preguntas disponibles</dt>
+              <dd id="meta-total-questions">—</dd>
+            </div>
+            <div>
+              <dt>Módulos</dt>
+              <dd id="meta-categories">—</dd>
+            </div>
+            <div>
+              <dt>Nota mínima</dt>
+              <dd id="meta-pass-mark">—</dd>
+            </div>
+          </dl>
+
+          <form id="start-form" class="settings" novalidate>
+            <fieldset>
+              <legend>Configuración</legend>
+
+              <div class="field">
+                <span class="field-label">Módulo</span>
+                <div id="cfg-categories" class="checkbox-group" role="radiogroup" aria-label="Seleccionar módulo"></div>
+              </div>
+
+              <div class="field">
+                <span class="field-label">Comportamiento</span>
+                <div class="settings-toggles" role="group" aria-label="Comportamiento del examen">
+                  <label class="settings-check">
+                    <input id="cfg-shuffle-q" type="checkbox" checked />
+                    <span>
+                      <strong>Orden aleatorio de preguntas</strong>
+                      <small>Aleatoriza la secuencia en cada intento.</small>
+                    </span>
+                  </label>
+                  <label class="settings-check">
+                    <input id="cfg-shuffle-o" type="checkbox" checked />
+                    <span>
+                      <strong>Orden aleatorio de respuestas</strong>
+                      <small>Cambia el orden visual sin alterar la respuesta correcta.</small>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="cfg-import" class="file-label">
+                  <span>Importar otro banco de preguntas (.json)</span>
+                  <input id="cfg-import" type="file" accept="application/json,.json" />
+                </label>
+                <p id="import-status" class="hint" aria-live="polite"></p>
+              </div>
+            </fieldset>
+
+            <div class="actions">
+              <button id="btn-start" class="btn btn-primary" type="submit">Comenzar examen</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============== PANTALLA DE EXAMEN ============== -->
+      <section id="screen-exam" class="screen hidden" aria-labelledby="exam-title">
+        <div class="exam-layout">
+          <div class="exam-main">
+            <div class="exam-topbar">
+              <h2 id="exam-title" class="exam-heading">
+                Pregunta <span id="q-current">1</span>
+                <span class="muted">/ <span id="q-total">0</span></span>
+              </h2>
+              <div class="exam-status">
+                <span id="q-category" class="pill"></span>
+                <div class="timers-group">
+                  <div class="timer-block">
+                    <span class="timer-label">Total</span>
+                    <span id="timer-total" class="timer" aria-live="polite" aria-atomic="true">--:--</span>
+                  </div>
+                  <div class="timer-block">
+                    <span class="timer-label">Pregunta</span>
+                    <span id="timer-question" class="timer" aria-live="off">--:--</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress" role="progressbar" aria-label="Progreso del examen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+            <article id="question-card" class="card question-card" aria-live="polite">
+              <p id="q-prompt" class="q-prompt"></p>
+              <ul id="q-options" class="options" role="radiogroup" aria-label="Opciones de respuesta"></ul>
+            </article>
+
+            <div class="exam-controls">
+              <button id="btn-submit" class="btn btn-success" type="button">Entregar examen</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== PANTALLA DE RESULTADOS ============== -->
+      <section id="screen-results" class="screen hidden" aria-labelledby="results-title">
+        <div class="card results-summary">
+          <h2 id="results-title" class="screen-title">Resultados</h2>
+          <div class="score-row">
+            <div class="score-big">
+              <span id="result-percent">0 / 10</span>
+              <span id="result-verdict" class="verdict">—</span>
+            </div>
+            <dl class="meta-grid">
+              <div><dt>Respuestas correctas</dt><dd id="result-score">0 / 0</dd></div>
+              <div><dt>Tiempo</dt><dd id="result-time">—</dd></div>
+              <div><dt>Nota mínima</dt><dd id="result-passmark">—</dd></div>
+              <div><dt>Sin responder</dt><dd id="result-unanswered">0</dd></div>
+            </dl>
+          </div>
+          <div class="actions">
+            <button id="btn-restart" class="btn btn-primary" type="button">Reiniciar</button>
+            <button id="btn-print" class="btn" type="button">Imprimir resumen</button>
+          </div>
+        </div>
+
+        <section class="review" aria-label="Revisión pregunta por pregunta">
+          <h3 class="review-heading">Revisión</h3>
+          <div id="review-list" class="review-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Diálogo de confirmación de entrega -->
+    <dialog id="confirm-dialog" class="dialog" aria-labelledby="confirm-title">
+      <form method="dialog" class="dialog-form">
+        <h2 id="confirm-title">¿Entregar examen?</h2>
+        <p id="confirm-message" class="muted">Aún tienes preguntas sin responder.</p>
+        <div class="actions">
+          <button value="cancel" class="btn">Seguir trabajando</button>
+          <button id="confirm-ok" value="ok" class="btn btn-primary">Entregar ahora</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Notificación no bloqueante -->
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+    <footer class="app-footer">
+      <small>
+        Examen de práctica estático · funciona completamente en tu navegador ·
+        <a href="https://github.com/" rel="noopener">código en GitHub</a>
+      </small>
+    </footer>
+
+    <script src="./js/storage.js"></script>
+    <script src="./js/exam.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
